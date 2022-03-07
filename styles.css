@@ -1,0 +1,365 @@
+/*
+
+COLOR PALETTE
+
+Blue Sapphire:  #2E5266;
+Light Slate Gray:  #6E8898;
+Cadet Grey:  #9FB1BC;
+Timberwolf: #D3D0CB;
+Maize Crayola: #E2C044;
+
+*/
+
+
+
+*- {
+	font-family: "Open Sans", sans-serif; 
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;	
+}
+
+header {
+	height: 50px;
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+	position: fixed;
+	min-width: 100%;
+	margin-top: 20px;
+	color: white;
+}
+
+#navbar {
+	 transition: top .5s; /* Transition effect when sliding down (and up) */
+}
+
+
+header div h2 {
+		padding-left: 10px;
+		font-size: 40px;
+		word-spacing: 8px;
+		min-width: 100%;
+
+	}
+
+
+@media screen and (max-width: 1080px) { /* for smaller computer-screens */
+
+	header div h2 {							
+		padding-left: 10px;
+		font-size: 24px;
+		word-spacing: 8px;
+		min-width: 100%;
+	}
+}
+
+@media screen and (max-width: 720px) { /* for very small phones */
+
+	header div h2 {							
+		padding-left: 10px;
+		font-size: 18px;
+		word-spacing: 8px;
+		min-width: 100%;
+	}
+}
+
+
+
+.navbar {
+
+}
+
+.navbar ul {
+	display: flex;
+	flex-direction: row;
+	float: right;
+	gap: 8vw;
+	padding-right:  20px;
+
+}
+
+.navbar ul li{
+	list-style: none;
+}
+
+.navbar ul li a {
+	color:  white;
+	text-decoration: none;
+	padding: 12px;
+
+}
+
+.navbar ul li a:hover {
+	transition: all .4s ease;
+	background-color: black;
+}
+
+.hero-image,
+.hero-text 
+ {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+
+
+}
+
+
+.hero-text {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.hero-text h1 {
+	font-size: 48px;
+}
+
+
+
+.hero-image {
+	margin: 0;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("hero background.jpeg");
+	background-size: cover;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+
+}
+
+.hero-line {
+	width: 100%;
+
+}
+
+.phone {
+	background-color: #9FB1BC; /* Cadet Gray */
+  	border: none;
+  	color: white;
+  	padding: 15px 32px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 16px
+}
+
+.phone:hover {
+	transition: all .4s ease;
+	background-color: #6E8898; /* Light Slate Gray */
+
+}
+
+
+.card-container {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: space-around;
+	padding: 10%;
+	flex: 1 1 0px;
+	max-height: 25%;
+}
+
+.icon {
+	max-width: 80px;
+}
+
+
+.cards-section {
+	height: 100%;
+	padding-bottom: 20px;
+
+}
+
+@media screen and (max-width: 1080px) {
+	.cards-section {
+		font-size: 14px;
+	}
+
+
+
+}
+
+.cards-1 {
+	margin: 0;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Oil Change Background.jpeg");
+	background-size: cover;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	color: white;
+	width: 33%;
+}
+
+.cards-2 {
+	margin: 0;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Brake Background.jpeg");
+	background-size: cover;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	color: white;
+	width: 33%;
+}
+
+.cards-3 {
+	margin: 0;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("AC and Heat Background.jpeg");
+	background-size: cover;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	color: white;
+	width: 33%;
+}
+
+
+
+
+
+
+
+
+.cards-1 h4,
+.cards-2 h4,
+.cards-3 h4 {
+	font-size: 2em;
+	text-decoration: underline;
+}
+
+.cards-1 p,
+.cards-2 p,
+.cards-3 p {
+	font-size: 1em;
+}
+
+.other-services {
+	text-align: center;
+	color: #2E5266;
+}
+
+.other-services h2 {
+	text-decoration: underline;
+	padding-bottom: 2em;
+	padding-top: 4em;
+
+}
+
+.other-services ul{
+	columns: 3;
+	text-align: center;
+	align-items: center;
+	padding: 0;
+}
+
+.other-services li {
+	list-style: none;
+	font-size: 20px;
+	margin-bottom: 30px;
+	align-items: center;
+
+
+}
+
+.services {
+	text-align: center;
+	margin: 0;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("hero background.jpeg");
+	background-size: cover;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+}
+
+/* Initially this was set at 1080px, but it only looked good on iPhone SE 
+and small phones alike. Lowered to 720px for small phones, but line-height
+under .sub-title was set to 2 em. It appears to fix the issue albeit the font
+continues to appear a tad bit small  */
+
+@media screen and (max-width: 720px) { 
+
+	.services {
+		font-size: 9px;
+	}
+
+}
+
+
+.services-title {
+	max-width: 50%;
+	margin:  0 auto;
+	padding-top: 3em;
+	font-size: 1.5em;
+	color: white;
+	line-height: 2em;
+}
+
+.sub-title {
+	max-width: 50%;
+	margin:  0 auto;
+	padding-top: 3em;
+	font-size: 1.5em;
+	color: white;
+	line-height: 2em;
+
+}
+
+.services-text {
+	max-width: 50%;
+	margin:  0 auto;
+	padding-top: 3em;
+	font-size: 1.5em;
+	color: white;
+	line-height: 2em;
+}
+
+.contact {
+	height: 25vh;
+	text-align: center;
+	color: #2E5266;
+	padding-top: 8%;
+	line-height: 3em;
+}
+
+.line {
+	width: 50%;
+	color: #E2C044;
+}
+
+footer {
+	padding-top: 20vh;
+	height: 5vh;
+	text-align: center;
+	align-items: center;
+}
+
+footer h4 {
+	padding-top: 5vh;
+	background-color: black;
+	padding-bottom: 5vh;
+}
+
+footer h4 a{
+	text-decoration: none;
+	color: whitesmoke;
+}
+
+footer h4 a:hover {
+	color: yellow;
+}
+
+
+
